@@ -1,0 +1,41 @@
+body{
+    background-color: antiquewhite;   
+   }
+   h1{
+       display: flex;
+       justify-content: center;
+       border: 3px solid black;
+       background-color: yellow;
+       
+   }
+  .container{
+      display: flex;
+      justify-content: space-between;
+      width: 100vw;
+      
+  }
+  .productCategories{
+      width: 50%;
+  }
+  .productList{
+      width: 50%;
+  }
+  button{
+      width: 150px;
+      height: 40px;
+      border-radius: 12px;
+      background-color: aqua;
+      font-weight: bold;
+      cursor: pointer;
+
+  }
+ .category{
+     width: 100px;
+     background-color: aquamarine;
+ }
+ .tatCategory{
+     background-color: pink;
+     width: 70px;
+ }
+  
+ 
