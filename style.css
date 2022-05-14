@@ -16,6 +16,8 @@ body{
   }
   .productCategories{
       width: 50%;
+      margin-left: 50px;
+      
   }
   .productList{
       width: 50%;
@@ -32,10 +34,17 @@ body{
  .category{
      width: 100px;
      background-color: aquamarine;
+     text-align: center;
  }
  .tatCategory{
      background-color: pink;
      width: 70px;
+ }
+ li{
+     margin-bottom: 10px;
+ }
+ div{
+     margin: 7px;
  }
   
  
