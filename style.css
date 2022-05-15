@@ -31,15 +31,7 @@ body{
       cursor: pointer;
 
   }
- .category{
-     width: 100px;
-     background-color: aquamarine;
-     text-align: center;
- }
- .tatCategory{
-     background-color: pink;
-     width: 70px;
- }
+
  li{
      margin-bottom: 10px;
  }

@@ -21,7 +21,6 @@ const getProducts = async () => {
   );
   const fetchData = await data.text();
   const regex = JSON.parse(fetchData.match(/\{.*\}/g));
-  // console.log(regex);
   return regex.products;
 };
 
@@ -39,7 +38,6 @@ const getLabelAttribute = async (id) => {
   for (let i = 0; i < attArr.length; i++) {
     for (let j = 0; j < attArr[i].labels.length; j++) {
       if (attArr[i].labels[j].id === id) {
-        // console.log(attArr[i].title);
         return attArr[i].title;
       }
     }
@@ -48,7 +46,6 @@ const getLabelAttribute = async (id) => {
 
 const getProductList = async () => {
   const arr = await getProducts();
-
   const ul = document.createElement("ul");
   for (let i = 0; i < arr.length; i++) {
     let attrWithLabel = {};
@@ -71,8 +68,6 @@ const getProductList = async () => {
     for (const key in attrWithLabel) {
       stringToPrint += `${key}: ${attrWithLabel[key]} \n`;
     }
-
-
     let li = document.createElement("li");
     li.innerHTML = `ID ${arr[i].id} <br> Title ${arr[i].title} <br> Price ${arr[i].price}
                                <br> ${stringToPrint} <br> Categories: `;
